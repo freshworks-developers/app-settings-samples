@@ -1,0 +1,24 @@
+{
+  "platform-version": "3.0",
+  "modules": {
+    "common": {
+      "requests": {
+        "createTicket": {},
+        "getTickets": {}
+      },
+      "events": {}
+    },
+    "support_ticket": {
+      "location": {
+        "ticket_sidebar": {
+          "url": "index.html",
+          "icon": "styles/images/wave.png"
+        }
+      }
+    }
+  },
+  "engines": {
+    "node": "18.18.2",
+    "fdk": "9.1.1"
+  }
+}

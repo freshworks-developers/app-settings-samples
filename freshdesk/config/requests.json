@@ -1,0 +1,23 @@
+{
+  "createTicket": {
+    "schema": {
+      "method": "POST",
+      "host": "<%= app_settings.freshdesk_subdomain %>.freshdesk.com",
+      "path": "/api/v2/tickets",
+      "headers": {
+        "Authorization": "Basic <%= encode(app_settings.freshdesk_api_key) %>",
+        "Content-Type": "application/json"
+      }
+    }
+  },
+  "getTickets": {
+    "schema": {
+      "method": "GET",
+      "host": "<%= context.subdomain %>.freshdesk.com",
+      "path": "/api/v2/tickets",
+      "headers": {
+        "Authorization": "Basic <%= encode(context.api_key) %>"
+      }
+    }
+  }
+}
